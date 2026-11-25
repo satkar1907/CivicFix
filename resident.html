@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivicFix - File a Complaint</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="resident.css" />
+</head>
+<body>
+  <header>
+    <h1>CivicFix - Resident Portal</h1>
+    <a href="index.html" class="nav-back">&larr; Back to Role Selection</a>
+  </header>
+
+  <main>
+    <section class="form-wrapper">
+      <h2>Report an Issue in Your Neighborhood</h2>
+      <form id="complaintForm">
+        <div class="form-group">
+          <label for="fullName">Your Full Name:</label>
+          <input type="text" id="fullName" required placeholder="Enter your full name" />
+        </div>
+
+        <div class="form-group">
+          <label for="category">Select Issue Category:</label>
+          <select id="category" required>
+            <option value="">-- Choose Category --</option>
+            <option value="Damaged Road / Pothole">Damaged Road / Pothole</option>
+            <option value="Water Leakage / Drainage Issue">Water Leakage / Drainage Issue</option>
+            <option value="Broken Streetlight">Broken Streetlight</option>
+            <option value="Garbage Overflow">Garbage Overflow</option>
+            <option value="Damaged Sidewalk">Damaged Sidewalk</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Exact Location / Address:</label>
+          <input type="text" id="location" required placeholder="Street name, landmark, or area" />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Detailed Description:</label>
+          <textarea id="description" rows="4" required placeholder="Describe the issue in detail..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="damageImage">Upload Image of Damage (Optional):</label>
+          <input type="file" id="damageImage" accept="image/*" />
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Complaint</button>
+      </form>
+
+      <div id="successMessage" class="alert-success hidden">
+        Your complaint has been registered and forwarded to the local municipal team!
+      </div>
+    </section>
+
+    <section class="tracker-wrapper">
+      <h2>Track Your Submitted Complaints</h2>
+      <p id="noComplaintsMsg" class="empty-notice">No complaints submitted yet.</p>
+      <div id="complaintsList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CivicFix Project</p>
+  </footer>
+
+  <script src="resident.js"></script>
+</body>
+</html>

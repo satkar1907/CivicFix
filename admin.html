@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivicFix - Admin Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <header>
+    <h1>CivicFix - Authority Dashboard</h1>
+    <a href="index.html" class="nav-back">&larr; Back to Role Selection</a>
+  </header>
+
+  <!-- Admin Login Section -->
+  <section id="loginSection" class="login-wrapper">
+    <h2>Admin Login</h2>
+    <form id="adminLoginForm">
+      <div class="login-group">
+        <label for="adminUser">Username:</label>
+        <input type="text" id="adminUser" required placeholder="Enter username" />
+      </div>
+      <div class="login-group">
+        <label for="adminPass">Password:</label>
+        <input type="password" id="adminPass" required placeholder="Enter password" />
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+      <p id="loginError" class="login-error hidden">Invalid username or password!</p>
+    </form>
+  </section>
+
+  <!-- Protected Admin Dashboard -->
+  <main id="adminDashboard" class="admin-wrapper hidden">
+    <div class="top-bar">
+      <h2>Reported Issues Management</h2>
+      <div class="top-actions">
+        <button id="clearDataBtn" class="clear-btn">Reset All Data</button>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Resident</th>
+            <th>Category</th>
+            <th>Location</th>
+            <th>Description</th>
+            <th>Damage Photo</th>
+            <th>Current Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="complaintsBody"></tbody>
+      </table>
+      <p id="emptyNotice" class="empty-notice">No reports have been submitted yet.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CivicFix Project</p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

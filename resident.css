@@ -1,0 +1,150 @@
+.nav-back {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffeb3b;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-back:hover {
+  text-decoration: underline;
+}
+
+.form-wrapper,
+.tracker-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 92%;
+}
+
+.form-wrapper h2,
+.tracker-wrapper h2 {
+  color: #2b5876;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.alert-success {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Tracker Section Cards */
+.complaint-card {
+  border: 1px solid #ddd;
+  border-left: 5px solid #2b5876;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.complaint-card h3 {
+  color: #2b5876;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.complaint-card p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.complaint-img {
+  max-width: 100%;
+  max-height: 220px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  object-fit: cover;
+  display: block;
+}
+
+.empty-notice {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+/* Status Badges */
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.badge-pending {
+  background-color: #ffeeba;
+  color: #856404;
+}
+
+.badge-progress {
+  background-color: #b8daff;
+  color: #004085;
+}
+
+.badge-solved {
+  background-color: #c3e6cb;
+  color: #155724;
+}

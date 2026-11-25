@@ -1,0 +1,231 @@
+.nav-back {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffeb3b;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-back:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Login Box Styles */
+.login-wrapper {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  flex: 1;
+}
+
+.login-wrapper h2 {
+  color: #2b5876;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-group label {
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.login-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.login-group input:focus {
+  border-color: #2b5876;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #2b5876;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #1e3f56;
+}
+
+.login-error {
+  color: #dc3545;
+  font-size: 0.88rem;
+  text-align: center;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+/* Dashboard Wrapper */
+.admin-wrapper {
+  max-width: 1100px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  flex: 1;
+  width: 95%;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.top-bar h2 {
+  color: #2b5876;
+}
+
+.top-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.clear-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.clear-btn:hover {
+  background-color: #b02a37;
+}
+
+.logout-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.logout-btn:hover {
+  background-color: #545b62;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #f1f3f5;
+  color: #333;
+}
+
+.table-thumb {
+  width: 75px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+/* Status Badges */
+.badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.badge-pending {
+  background-color: #ffeeba;
+  color: #856404;
+}
+
+.badge-progress {
+  background-color: #b8daff;
+  color: #004085;
+}
+
+.badge-solved {
+  background-color: #c3e6cb;
+  color: #155724;
+}
+
+/* Action Buttons */
+.action-btn {
+  padding: 6px 10px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-progress {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.btn-progress:hover {
+  background-color: #e0a800;
+}
+
+.btn-solved {
+  background-color: #28a745;
+}
+
+.btn-solved:hover {
+  background-color: #218838;
+}
+
+.empty-notice {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+  font-style: italic;
+}
